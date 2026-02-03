@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PoliSpy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <div class="logo" aria-hidden="true">PoliSpy</div>
+        <nav class="main-nav" role="navigation" aria-label="Main">
+          <a href="Polling.html">Local Polling</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero" role="main">
+      <div class="hero-inner">
+        <h1 class="site-title">PoliSpy</h1>
+        <p class="site-tag">Track elected officials, compare policies, and stay informed.</p>
+
+        <section class="button-container" aria-label="Explore levels">
+          <a id="local" href="#" class="nav-box" aria-label="Local politics">Local</a>
+          <a id="state" href="#" class="nav-box" aria-label="State politics">State</a>
+          <a id="federal" href="bill-dividers.html/federal.html" class="nav-box" aria-label="Federal politics">Federal</a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <p>&copy; <span id="year"></span> PoliSpy — Built for civic clarity.</p>
+      </div>
+    </footer>
+
+    <script>
+      // simple year injection
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

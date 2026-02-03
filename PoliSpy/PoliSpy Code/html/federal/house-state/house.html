@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>PoliSpy — House Bills</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../../styles/style.css">
+		<style>
+			.list { max-width:1100px; margin: 24px auto; padding: 0 18px; }
+			.bill { background: #fff; padding: 18px; border-radius: 10px; margin-bottom: 14px; box-shadow: 0 4px 14px rgba(17,17,17,0.04); }
+			.bill h3 { margin-bottom: 8px; font-size: 1.05rem; }
+			.bill p { color:#333; line-height:1.45; }
+			.controls { max-width:1100px; margin:12px auto; padding:0 18px; display:flex; gap:8px; align-items:center; }
+			.muted { color:#666; font-size:0.95rem }
+			.bill .meta { color:#666; font-size:0.92rem; margin-top:8px }
+			.bill .actions { margin-top:12px }
+			.btn { background:#e91e63; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer }
+			.btn[disabled]{ opacity:0.6; cursor:default }
+		</style>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="header-inner">
+				<div class="logo">PoliSpy</div>
+				<nav class="main-nav"><a href="../index.html">Home</a></nav>
+			</div>
+		</header>
+
+		<main class="hero">
+			<div class="hero-inner">
+				<h1 class="site-title">House Bills</h1>
+				<p class="site-tag">Curated highlights from the state House.</p>
+
+				<section class="controls">
+					<div class="muted">Showing: Top 3 bills</div>
+					<div style="flex:1"></div>
+					<button class="btn" disabled>Subscribe</button>
+				</section>
+
+				<section class="list" aria-label="House bills list">
+					<article class="bill">
+						<h3>HB 1 — Example Education Reform</h3>
+						<p>Short summary: This bill proposes updates to curriculum standards and funding mechanisms for public schools statewide. Placeholder text for description.</p>
+						<div class="meta">Sponsor: Rep. Jane Doe • Status: In committee</div>
+						<div class="actions"><button class="btn" disabled>Learn more</button></div>
+					</article>
+
+					<article class="bill">
+						<h3>HB 2 — Infrastructure Investment</h3>
+						<p>Short summary: A proposed package for repairing roads and bridges, including targeted grants for rural counties. Placeholder text for description.</p>
+						<div class="meta">Sponsor: Rep. John Smith • Status: Awaiting vote</div>
+						<div class="actions"><button class="btn" disabled>Learn more</button></div>
+					</article>
+
+					<article class="bill">
+						<h3>HB 3 — Healthcare Access Expansion</h3>
+						<p>Short summary: Expands telehealth services and funding to increase access in under-served communities. Placeholder text for description.</p>
+						<div class="meta">Sponsor: Rep. Alex Lee • Status: Passed committee</div>
+						<div class="actions"><button class="btn" disabled>Learn more</button></div>
+					</article>
+				</section>
+
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="footer-inner">
+				<p class="muted">PoliSpy — Built for civic clarity.</p>
+			</div>
+		</footer>
+
+		<script src="../../../scripts/getFederalBills.js" type="module"></script>
+	</body>
+</html>
+

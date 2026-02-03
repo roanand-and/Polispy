@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PoliSpy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">PoliSpy</div>
+        <nav class="main-nav"><a href="./index.html">Home</a></nav>
+      </div>
+    </header>
+
+
+<section>
+  <div class="polling-container">
+      <div class="polling-content" data-poll-id="mayor">
+        <h2>Willim Manger Jr.</h2>
+        <div class="poll-controls">
+          <button class="poll-btn" id="mayor-approve-btn">Approve</button>
+          <button class="poll-btn indifferent" id="mayor-indifferent-btn">Indifferent</button>
+          <button class="poll-btn" id="mayor-disapprove-btn">Disapprove</button>
+        </div>
+        <div class="poll-counts">
+          <span id="mayor-approve-count">0</span> approve · <span id="mayor-indifferent-count">0</span> indifferent · <span id="mayor-disapprove-count">0</span> disapprove
+        </div>
+        <canvas id="mayor-chart" class="poll-chart" width="180" height="180"></canvas>
+      </div>
+
+      <div class="polling-content" data-poll-id="governor">
+        <h2>Kathy Hochul</h2>
+        <div class="poll-controls">
+          <button class="poll-btn" id="governor-approve-btn">Approve</button>
+          <button class="poll-btn indifferent" id="governor-indifferent-btn">Indifferent</button>
+          <button class="poll-btn" id="governor-disapprove-btn">Disapprove</button>
+        </div>
+        <div class="poll-counts">
+          <span id="governor-approve-count">0</span> approve · <span id="governor-indifferent-count">0</span> indifferent · <span id="governor-disapprove-count">0</span> disapprove
+        </div>
+        <canvas id="governor-chart" class="poll-chart" width="180" height="180"></canvas>
+      </div>
+
+      <div class="polling-content" data-poll-id="president">
+        <h2>Donald Trump</h2>
+        <div class="poll-controls">
+          <button class="poll-btn" id="president-approve-btn">Approve</button>
+          <button class="poll-btn indifferent" id="president-indifferent-btn">Indifferent</button>
+          <button class="poll-btn" id="president-disapprove-btn">Disapprove</button>
+        </div>
+        <div class="poll-counts">
+          <span id="president-approve-count">0</span> approve · <span id="president-indifferent-count">0</span> indifferent · <span id="president-disapprove-count">0</span> disapprove
+        </div>
+        <canvas id="president-chart" class="poll-chart" width="180" height="180"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script src="polling.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,265 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall page styling */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #fff 0%, #f9f7ff 100%);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #222;
+}
+
+/* Title styling */
+.site-title {
+  font-size: 60px;
+  color: #e91e63; /* brand pink */
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.site-tag {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 760px;
+}
+
+/* Header */
+.site-header {
+  width: 100%;
+  padding: 18px 28px;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 900;
+  color: #e91e63;
+  font-size: 1.1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #444;
+  margin-left: 18px;
+  font-weight: 600;
+}
+
+/* Container for the 3 boxes */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.polling-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.polling-content {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e91e63;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 14px;
+}
+/* Poll controls */
+.poll-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 14px 0 8px;
+}
+.poll-btn {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.poll-btn:active { transform: translateY(1px); }
+.poll-counts { color: #444; margin-top: 8px; font-weight: 600; }
+
+/* Indifferent button variant */
+.poll-btn.indifferent {
+  background: #ffb300;
+  color: #2c2c2c;
+}
+
+/* Pie chart canvas */
+.poll-chart {
+  display: block;
+  margin: 12px auto 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+/* Individual boxes */
+.nav-box {
+  flex: 1 1 0;
+  background: linear-gradient(180deg, #ffffff, #fff7fb);
+  color: #222;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 18px;
+  border-radius: 14px;
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+  box-shadow: 0 2px 8px rgba(17,17,17,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.nav-box:hover {
+  background-color: #e91e63;
+  color: #e91e63;
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(233,30,99,0.18);
+}
+
+/* Hero layout */
+.hero {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 36px 20px 60px;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+.site-footer {
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  background: transparent;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsiveness */
+@media (max-width: 780px) {
+  .button-container {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 12px;
+  }
+
+  .main-nav a { display: none; }
+}
+
+@media (min-width: 781px) {
+  .main-nav a { display: inline-block; }
+}
+
+
+.bill-categories {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1250px;
+  margin: 20px auto;
+}
+
+.bill-category-names {
+  color: #e91e63;
+  border-width: 2px;
+  border-color: #e91e63;
+  border-style: solid;
+  margin: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 14px;
+  padding: 10px 14px;
+}
+
+.bill-style {
+  color: #464646;
+  margin: 10px;
+  padding: 8px;
+}
+
+.bill-headings {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #282828;}
+
+
+.bill-buttons {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.bill-buttons:hover {
+  background: #d81b60;
+  box-shadow: #666 0px 2px 6px;
+}
+
+
+.bill-names {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1250px;
+  margin: 20px auto;
+}
